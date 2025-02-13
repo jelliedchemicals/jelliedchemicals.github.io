@@ -1,0 +1,50 @@
+---
+title: Projects 2025
+date: 2025-02-12 -0800
+categories: [Introduction]
+tags: [introduction, projects, goals, 2025]     # TAG names should always be lowercase
+author: <author_id>
+description: A very brief introduction and page kickoff
+toc: false
+---
+
+
+<h3>Projects and Ideas</h3>
+I want to start by getting some of the projects I have in mind down in one spot. This list will mostly consist of books and youtube playlists for now, but I may always add or reference more in later posts.
+
+Part of this site and these posts will be me figuring out more of a format or an outline as well as getting more comfortable with writing down my thoughts and processes and how to arrange all of that. In addition, writing posts on this site and delving into the various projects will allow me to get more comfortable with using GitHub regularly and having something to reference as I delve into more technical environments. For this post, I'm just going to go over my short-ish term goals. I've made the setup of this site and process more complicated than necessary in the past so at this point I'm eager to dive into some of these projects, being able to make a record of what I'm doing, and not feeling like I'm losing my progress on some projects when delving into others.
+
+<h3>A Rambling Preamble</h3>
+I know in the above paragraph I'm referring to these goals and objectives as "short"-term, and I also know that these skills take years (and years) of practice. On top of that, I'm also breaking the rule of goals being clearly definable here. Really what I'm trying to layout here are guidelines for the paths I'm taking and skills I want to work on and build. This is not in any way an exhaustive list, nor will it be an extensive write up. This will be a pretty short post laying out next steps and immediate interests.
+
+
+<h3>The actual goals</h3>
+While this isn't a complete list, these are the things I have in mind for next steps.
+
+- **Getting better at scripting** - I've scripted very basic stuff in Python previously, but I need to do a lot more work in that realm.
+	- Python and C for now
+	- Best practices, particularly in code structure
+	- Red team scripting as well as writing scripts and then working on breaking them
+	- Automation
+
+- **Expanding linux systems knowledge** - I'm comfortable in Linux but I have a long way to go.
+
+- **More CTF experience** - I've done TryHackMe, PicoCTF, and some other online CTF challenges, but the ones I've done have been fairly rudimentary in my opinion and I'd like to expand my technical skills here. I'd love to do a live CTF someday as well.
+
+- **Bug bounty programs** - I've never actually participated in any of these. I don't have a goal of being a full-time bug bounty hacker but I'd love to develop some skills here and maybe even bring in a tiny amount of cash from doing it.
+
+- **Learning assembly** - I've already dug into some of the sources I'm listing here regarding this. I've read some of the Hacking TAOE book and learned the absolute basics and I've gone through a decent portion of the LiveOverflow playlist. Learning assembly though is very interesting to me and would be helpful for some of the directions I want to take my career.
+
+- **Reading network traffic** - I'm not a stranger to this, I've done a decent amount of it in my personal studies and 7+ years in IT and Infosec but I could definitely be better.
+
+- **Technical writing** - I haven't written technical reports, I've only read them. This is just a good skill to practice to set myself up for success further into my career.
+
+<h3>Projects</h3>
+Here are the projects I have in mind, in no particular order, for working on some of the goals above. I'll most likely be working on multiple items from this at any given time.
+
+- [Automating the Boring Stuff with Python][https://automatetheboringstuff.com/]
+- [Linux Basics for Hackers][https://nostarch.com/linuxbasicsforhackers]
+- [Hacking: The Art of Exploitation 2nd Edition][https://www.amazon.com/Hacking-Art-Exploitation-Jon-Erickson/dp/1593271441]
+- [LiveOverflow playlist on assembly][https://www.youtube.com/watch?v=iyAyN3GFM7A&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN]
+- CTFs and bug bounty playlists/series
+	- My main focus here will be [PicoCTF][https://www.picoctf.org/] for now
