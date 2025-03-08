@@ -182,7 +182,8 @@ git installer: if the software you want isnt available in repositories, especial
 
 
 **Commands Chapter 1 - Chapter 4:**
-`locate
+```
+locate
 whereis
 which
 find
@@ -212,10 +213,12 @@ apt-get purge
 apt autoremove
 apt-get update
 apt-get upgrade
-git clone`
+git clone
+```
 
 **Commands to learn more about and/or practice with more:**
-`which
+```
+which
 cat >
 cat >>
 find
@@ -223,4 +226,5 @@ nl
 less
 sed
 dig
-apt autoremove`
+apt autoremove
+```
