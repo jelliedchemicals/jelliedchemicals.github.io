@@ -1,6 +1,6 @@
 ---
 title: A Bumpy but Good Beginning
-date: 2025-03-08 -0800
+date: 2025-03-08 -0800 # Yes, write out the date, it doesnt automatically pick it up. -800 might be whats messing up the date and making it a day earlier so consider removing.
 categories: [LBFH]
 tags: [linux basics for hackers, lbfh, projects, linux, objectives, hacking, dns, dhcp, file manipulation]     # TAG names should always be lowercase
 author: <author_id>
