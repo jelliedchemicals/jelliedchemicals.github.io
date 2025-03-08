@@ -29,17 +29,17 @@ Because of my goal to move more quickly and knowing much of what was covered, th
 <h3>Linux Basics for Hackers</h3>
 **CHAPTER 1: GETTING STARTED WITH THE BASICS**
 Commands:
-- `locate`: will go through entire filesystem and locate every instance of that word
+- `locate` will go through entire filesystem and locate every instance of that word
 	- Uses a database that is typically only updated once a day, so will not find things from minutes or hours ago
-- **whereis**: searches for binary files and will return the location of the binary, will also return man page related to the binary
-- **which**: only returns the location of the binaries in the PATH variable in Linux
+- `whereis` searches for binary files and will return the location of the binary, will also return man page related to the binary
+- `which` only returns the location of the binaries in the PATH variable in Linux
 	- **PATH variable** will be covered more in chapter seven, but it holds the directories in which the OS looks for the commands you execute in the command line.
-	- **which** takes the parameter given and the OS looks to the PATH variable to see in which directories it should look look for the parameter
+	- `which` takes the parameter given and the OS looks to the PATH variable to see in which directories it should look look for the parameter
 	- Directories at a minimum include /usr/bin but also include /usr/sbin/
 	- I still have more questions about what this means and how it functions
-- **find**: most powerful and flexible of the search utilities. You can begin your search in any designated directory and can look for filename, date of creation or modification, the owner, group, permissions, and the size.
+- `find` most powerful and flexible of the search utilities. You can begin your search in any designated directory and can look for filename, date of creation or modification, the owner, group, permissions, and the size.
 	- syntax: find *directory* *options* *expression*
-	- find / -type f -name apache2
+	- `find / -type f -name apache2`
 		- This searches for apache2 in the root directory, -f looks for ordinary files
 	- A search going through every directory is slow, but it can be sped up by searching only the directories you think the file may be in
 		- If we were looking for a configuration file, it would make sense to start our look in /etc
