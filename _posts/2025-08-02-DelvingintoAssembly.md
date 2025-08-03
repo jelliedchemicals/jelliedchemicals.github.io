@@ -45,6 +45,7 @@ Alright, lets move on to writing a program in C.
 
 <h6>Writing Our First Program in C</h6>
 firstprog.c
+
 ```
 #include <stdio.h>     // Tells the compiler to include headers for a standard                          // input/output library named stdio (also will this                              // comment break things?)
 
@@ -180,10 +181,11 @@ We can see this more easily with the examine tool using the `c` format letter an
 `(gdb) x/6cb 0x8048484` lets us see each ASCII letter next to its corresponding unsigned **numbers** bytes. `x/s 0x8048484` returns the string at that location of `Hello, world!\n"`.
 
 My own note here, but why did `x/6ub 0x8048484` above return `111` and then `32` (o followed by a space) rather than `111   44` for `o` followed by `,` since `x/s 0x8048484` returns the string with a comma before the space. The `x/6cb 0x8048484` example just before it, showing us how c returns the ASCII character for each corresponding byte, shows a space after the `o`. I'm not sure if I missed something, it will be explained shortly, or it was a mistake in the book. 
-	I came back and rewrote the program and ran `x/s 0x8048484` here to show I wrote it to have a comma in the string, then ran `x/8cb 0x8048484` and confirmed that the book missed a comma, unsigned decimal 44, before 32, which referred to the space in the string.
-	![Image showing x/s showing the memory address and it's contents of the string. x/8cb then shows the numbers and related ASCII characters, revealing that there should have been a 44 for the comma.](https://github.com/jelliedchemicals/jelliedchemicals.github.io/blob/c065a656adca379e442616fa056b90af70d476cb/_posts/Image2.png)
+
+I came back and rewrote the program and ran `x/s 0x8048484` here to show I wrote it to have a comma in the string, then ran `x/8cb 0x8048484` and confirmed that the book missed a comma, unsigned decimal 44, before 32, which referred to the space in the string.
+![Image showing x/s showing the memory address and it's contents of the string. x/8cb then shows the numbers and related ASCII characters, revealing that there should have been a 44 for the comma.](https://github.com/jelliedchemicals/jelliedchemicals.github.io/blob/c065a656adca379e442616fa056b90af70d476cb/_posts/Image2.png)
  
-	I did this quickly, so I rewrote the code and then examined the exact memory address 0x8048484 as per what the book was looking at. What I could've done better here was reviewing the steps that led us to find 0x8048484 and ran those to confirm I needed the same address.
+I did this quickly, so I rewrote the code and then examined the exact memory address 0x8048484 as per what the book was looking at. What I could've done better here was reviewing the steps that led us to find 0x8048484 and ran those to confirm I needed the same address.
 	
 Getting back to the instructions, the book discusses the `printf()` function. From here, we can move forward and look at the next two instructions, `lea` and `inc`, together. These two instructions increment the variable `i` by 1. `lea` refers to **Load Effective Address**, which will load `[ebp-4]` into the EAX register. The `inc` instruction increments the value found at this address, now stored in the EAX register, by 1. 
 
