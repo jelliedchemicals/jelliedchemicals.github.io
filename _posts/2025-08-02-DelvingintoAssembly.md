@@ -1,6 +1,6 @@
 ---
 title: Delving into Assembly
-date: 2025-06-02 -0800 # Yes, write out the date, it doesnt automatically pick it up. -800 might be whats messing up the date and making it a day earlier so consider removing.
+date: 2025-08-02 -0800 # Yes, write out the date, it doesnt automatically pick it up. -800 might be whats messing up the date and making it a day earlier so consider removing.
 categories: [HAE]
 tags: [hacking and the art of exploitation, jon erickson, hataoe, hae, projects, linux, objectives, hacking, assembly, C programming]     # TAG names should always be lowercase
 author: <author_id>
