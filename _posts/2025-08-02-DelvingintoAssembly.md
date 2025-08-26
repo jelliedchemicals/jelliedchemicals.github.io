@@ -184,7 +184,7 @@ My own note here, but why did `x/6ub 0x8048484` above return `111` and then `32`
 
 I came back and rewrote the program and ran `x/s 0x8048484` here to show I wrote it to have a comma in the string, then ran `x/8cb 0x8048484` and confirmed that the book missed a comma, unsigned decimal 44, before 32, which referred to the space in the string.
 
-![Image showing x/s showing the memory address and it's contents of the string. x/8cb then shows the numbers and related ASCII characters, revealing that there should have been a 44 for the comma.](www.github.com/jelliedchemicals/jelliedchemicals.github.io/blob/main/assets/images/HAE/HAE1.jpg)
+![Image showing x/s showing the memory address and it's contents of the string. x/8cb then shows the numbers and related ASCII characters, revealing that there should have been a 44 for the comma.](/jelliedchemicals/jelliedchemicals.github.io/blob/main/assets/images/HAE/HAE1.jpg)
  
 I did this quickly, so I rewrote the code and then examined the exact memory address 0x8048484 as per what the book was looking at. What I could've done better here was reviewing the steps that led us to find 0x8048484 and ran those to confirm I needed the same address.
 	
