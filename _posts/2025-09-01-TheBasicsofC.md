@@ -8,7 +8,7 @@ description: Continuing in Hacking and the Art of Exploitation and exploring som
 toc: false
 ---
 
-<h4>0x260 Back to Basics</h4>
+<h4>0x261 Strings</h4>
 
 Diving right back in, this section steps back to look at some foundational concepts in C.
 
@@ -53,7 +53,7 @@ All of that's great, but surely we don't have to individually set each character
 
 We can rewrite this char_array.c program using `strcpy()` to accomplish the same thing using the string library. This will include string.h because it uses a string function.
 
-char_array2.c
+char_array2.c:
 ```
 #include <stdio.h>
 #include <string.h>
@@ -121,7 +121,7 @@ So, each time a function is called, a record is kept on a data structure, the **
 
 At the middle breakpoint, the backtrace of the stack shows its record of the `strcpy()` call. The book also notes here that during the second run, the `strcpy()` function is at a slightly different address. It goes on to say that this is an exploit protection method that is turned on by default in the Linux kernel since 2.6.11 and that we will talk about this protection more at a later time. The issue I'm having with this though is that I don't see a different memory address during the second run, both in the book and in my own instance, so I'm not positive what this is referring to. I've looked this over a few times now and can't seem to spot the difference being discussed here. In the effort of not getting to hung up on this, I'm going to move forward, perhaps coming back to this later when I have a better understanding.
 
-<h6>0x262 Signed, Unsigned, Long, and Short</h6>
+<h4>0x262 Signed, Unsigned, Long, and Short</h4>
 By default, numerical values in C are signed, meaning that they can be both negative and positive. Unsigned values, however, do not allow negative numbers (which explains more about unsigned values in the examine or x command for GDB). All numerical values must be stored in binary, and unsigned values make the most sense in binary. All of this is just memory in the end.
 
 A 32-bit unsigned integer can contain values from 0 to 4,294,967,295, which is what we get from all binary 1s. A 32-bit integer is still 32 bits, meaning it can only be one in 2^32 possible bit combinations (2^32 equaling 4,294,967,296, where we minus 1 for starting at 0). This means that a 32-bit signed integer can range from -2,147,483,648 to 2,147,483,647 (note the difference in the last digit). One of the bits is a flag marking the value positive or negative.
@@ -166,5 +166,7 @@ int main() {
 After a bit of messing around with `\t` to double check it was tabbing, I continued on. Signed and unsigned integers are 4 bytes on the x86 architecture. A float is also 4 bytes, but a char only needs 1 byte. The book states that `long` and `short` keywords can also be used with floating point variables to extend and shorten their sizes, as shown in the photo above.
 
 So far, I need to do more research on two's complement and better understand the sentence "`long` and `short` keywords can also be used with floating point variables to extend and shorten their sizes."
+
+<h4>Review</h4>
 
 In these sections, we learned about arrays aka buffers in C to define character strings, and using `strcpy()` to copy a string into a destination. We also covered integers in C, both signed and unsigned, and their various sizes in bytes and changing those sizes with `long` and `short`. We covered two's complement for representing negative numbers in binary, though I still have to research this more so that I have a more robust understanding of how this works.
